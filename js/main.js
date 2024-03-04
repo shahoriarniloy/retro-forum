@@ -18,8 +18,8 @@ const displayDiscussions = discussions => {
         discussionCard.innerHTML = `
             <div class="indicator ml-4 mt-4 ">
                 <span class="indicator-item badge badge-secondary ${indicatorBackgroundColor}"></span> 
-                <div class="grid w-12 h-12 bg-base-300 place-items-center ">
-                    <img src="${discussion.image}" />
+                <div class="grid w-20 h-20  place-items-center ">
+                    <img src="${discussion.image}" style="border-radius:10%" />
                 </div>
             </div>
             <div class="flex flex-col w-full">
