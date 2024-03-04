@@ -31,10 +31,11 @@
     <header>
 
         <nav class="lg:mx-40 mx-12 my-10">
-            <div class="navbar flex justify-between">
+            <div class="navbar flex lg:flex-row flex-col justify-between">
 
                 <a class=" text-black font-extrabold text-3xl">Creativize</a>
 
+               <div class="flext lg:flex-row flex-col">
                 <ul class="menu menu-horizontal px-1 gap-3">
                     <li class="tooltip tooltip-top" data-tip="Home">
                         <div class="bg-gray-100 rounded-full h-14 w-14 flex items-center justify-center">
@@ -56,10 +57,11 @@
                             <a><img class="pt-2" src="images/flag.svg" alt=""></a>
                         </div>
                     </li>
-                    <li>
-                        <a class="btn bg-indigo-400 text-white font-bold rounded-3xl text-[20px] h-14 w-36">Sign In</a>
-                    </li>
+                    
                 </ul>
+                <a class="btn bg-indigo-400 text-white font-bold rounded-3xl text-[20px] h-14 w-36">Sign In</a>
+
+               </div>
 
 
             </div>
@@ -84,7 +86,7 @@
                     <div class="text-white lg:w-[633px] w-full lg:h-[353px] h-fit">
                         <h1 class="text-4xl lg:text-5xl font-bold ">Welcome to the <span
                                 class="text-indigo-400">Creativize</span> Forum</h1>
-                        <p class="mt-2 w-[455px] h-[72px] text-lg lg:text-xl mb-8">Step into the heart of artistry,
+                        <p class="mt-2 lg:w-[455px] h-[72px] text-lg lg:text-xl mb-8">Step into the heart of artistry,
                             where creativity and camaraderie intertwine to ignite boundless inspiration.</p>
                         <input id="search-field" type="text" placeholder="Search here anything"
                             class="input input-bordered max-w-xs h-[56px] w-[400px] rounded-3xl text-gray-900 bg-gray-100 pl-6 text-base" />

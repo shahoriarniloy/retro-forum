@@ -32,7 +32,7 @@ const displayDiscussions = discussions => {
                     <p class="text-base lg:text-sm text-slate-900 font-semibold pt-4 ">${discussion.description}</p>
                     <hr class="border-dashed my-5">
                 </div>
-                <div class="flex  justify-between">
+                <div class="flex lg:flex-row flex-col justify-between">
                     <div class="flex  lg:flex-row flex-col gap-8">
                         <div class="flex gap-4">
                             <img class="h-5 w-5 lg:h-[21px] lg:w-[21px]" src="images/tabler-icon-message-2.svg" alt="">
