@@ -61,8 +61,9 @@ const displaySearchedDiscussions = sdiscussions => {
                             </div>
                         </div>
 
-
+                        <button onclick="handleAddTitle('${discussion.title}', '${discussion.view_count}')">
                         <img class="h-7 w-auto lg:h-[26px] lg:w-[26px]" src="images/email.svg" alt="">
+                    </button>
                     </div>
                     </div>
         `;
@@ -71,6 +72,36 @@ const displaySearchedDiscussions = sdiscussions => {
     })
 
 }
+
+
+function handleAddTitle(title, viewCount) {
+    count++;
+    addTitle(title, viewCount);
+}
+
+function addTitle(title, viewCount) {
+
+    const titleContainer = document.getElementById('title-container');
+    console.log(titleContainer);
+   
+    const titleCard = document.createElement('div');
+    titleCard.classList = `flex p-4 justify-between bg-white mb-4 rounded-xl`;
+    titleCard.innerHTML = `
+    <h3 class="text-base lg:text-lg text-black font-bold">${title}</h3>
+                            <div class="flex gap-2 pr-2 pt-3">
+                                <img class="h-[21px] w-[21px]" src="images/tabler-icon-eye.svg" alt="">
+                                <h3 class="text-base lg:text-lg text-slate-900">${viewCount}</h3>
+                            </div>
+    
+    `;
+    titleContainer.appendChild(titleCard);
+
+    countElement.textContent = `(${count})`;
+
+    
+    
+}
+
 
 
 
