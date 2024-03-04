@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReTro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="bg-white">
+
+
+    <!-- Navbar Section -->
+
+
+    <header>
+
+        <nav class="lg:mx-40 mx-12 my-10">
+            <div class="navbar flex justify-between">
+
+                <a class=" text-black font-extrabold text-3xl">ReTro</a>
+
+                <ul class="menu menu-horizontal px-1 gap-3">
+                    <li class="tooltip tooltip-top" data-tip="Home">
+                        <div class="bg-gray-100 rounded-full h-14 w-14 flex items-center justify-center">
+                            <a><img class="pt-2" src="images/home.svg" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="tooltip tooltip-top" data-tip="Post">
+                        <div class="bg-gray-100 rounded-full h-14 w-14 flex items-center justify-center">
+                            <a><img class="pt-2" src="images/edit.svg" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="tooltip tooltip-top" data-tip="Add">
+                        <div class="bg-gray-100 rounded-full h-14 w-14 flex items-center justify-center">
+                            <a><img class="pt-2" src="images/add.svg" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="tooltip tooltip-top" data-tip="Marked">
+                        <div class="bg-gray-100 rounded-full h-14 w-14 flex items-center justify-center">
+                            <a><img class="pt-2" src="images/flag.svg" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="btn bg-indigo-400 text-white font-bold rounded-3xl text-[20px] h-14 w-36">Sign In</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+
+
+
+    </header>
+    <main>
+
+
+        <!-- banner section -->
+
+
+        <section class="lg:mx-40 mx-12 my-10 mt-40 h-fit">
+
+            <div
+                class="container bg-slate-900 flex flex-col items-center justify-center  min-h-[550px] h-fit rounded-[32px] relative lg:max-w-[1170px] min-w-[350px] mx-auto">
+                <img class="w-full h-auto opacity-70 absolute bottom-0" src="images/bgbanner.png" alt="">
+
+                <div class="absolute inset-0 flex lg:flex-row flex-col items-center justify-center mx-4 ">
+                    <div class="text-white lg:w-[633px] w-full lg:h-[353px] h-fit">
+                        <h1 class="text-4xl lg:text-5xl font-bold ">Welcome to the <span
+                                class="text-indigo-400">ReTro</span> Forum</h1>
+                        <p class="mt-2 w-[455px] h-[72px] text-lg lg:text-xl">Embark on a journey of creativity and
+                            camaraderie as we welcome you to the heart of textile artistry</p>
+                            <input id="search-field" type="text" placeholder="Search here anything"
+                            class="input input-bordered max-w-xs h-[56px] w-[400px] rounded-3xl text-gray-900 bg-gray-100 pl-6 text-base" />
+                        <button class="btn bg-indigo-400 h-[44px] w-[123px] rounded-3xl ml-[-131px] text-base" onclick="handleSearch()">Search</button>
+                        
+                    </div>
+                    <div class="bg-white h-fit lg:w-[371px] w-full rounded-2xl p-10 lg:mb-0 mb-8">
+                        <div class="flex text-xl lg:text-2xl justify-between mb-4">
+                            <p>Registered Users</p>
+                            <h3>01</h3>
+                        </div>
+                        <div class="flex text-xl lg:text-2xl justify-between mb-4">
+                            <p>Forum</p>
+                            <h3>05</h3>
+                        </div>
+                        <div class="flex text-xl lg:text-2xl justify-between mb-4">
+                            <p>Topics</p>
+                            <h3>01</h3>
+                        </div>
+                        <div class="flex text-xl lg:text-2xl justify-between mb-4">
+                            <p>Replies</p>
+                            <h3>01</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="lg:mx-40 mx-12 my-10">
+            <div class="grid justify-items-center">
+                <h3 class="lg:mt-8 mt-6 text-center text-neutral-900 text-3xl lg:text-4xl font-extrabold">Let's Discuss
+                </h3>
+                <p
+                    class="lg:mt-8 mt-4 lg:max-w-2xl sm:max-w-3xl text-center text-slate-900 text-opacity-60 text-lg font-normal   lg:text-xl  leading-normal lg:mb-8 mb-6">
+                    Join the conversation, where diverse perspectives converge and dialogues unfold, fostering a dynamic
+                    exchange of ideas within our thriving forum community.</p>
+            </div>
+
+            <div class="flex lg:flex-row flex-col mt-5 justify-between">
+                <div id="discussion-container"
+                    >
+
+                  
+                </div>
+
+                <div class="lg:max-w-[374px]  w-full h-auto min-w-fit bg-gray-100 rounded-2xl p-4 mt-4">
+                    <div class="flex justify-between">
+                        <h3 class="text-lg lg:text-xl font-extrabold">Title</h3>
+                        <div class="flex">
+                            <img class="w-[30px] h-[20px] pr-2" src="images/tick.svg" alt="">
+                            <h3 class="pr-2 text-base lg:text-lg text-[#12132D99] font-semibold">Mark as read</h3>
+                            <h3 class="text-base lg:text-lg">(1)</h3>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl w-[326px] h-[82px] mt-4">
+                        <div class="flex p-4 justify-between">
+                            <h3 class="text-base lg:text-lg text-black font-bold">10 kids Unaware of Their Halloween
+                                Costume</h3>
+                            <div class="flex gap-2 pr-2 pt-3">
+                                <img class="h-[21px] w-[21px]" src="images/tabler-icon-eye.svg" alt="">
+                                <h3 class="text-base lg:text-lg text-[#12132D99]">550</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- join forum section -->
+        <section class="lg:mx-40 mx-12 mt-20 h-[415px] lg:max-w-[1194px]  min-w-fit lg:min-w-[350px] rounded-3xl ">
+            <div class="  bg-black rounded-[32px] p-20 flex  lg:flex-row flex-col">
+                <div class="text-white lg:w-[670px] h-[250px]">
+                    <h1 class="text-4xl lg:text-5xl font-bold">Join Our Forum </h1>
+                    <p class="mt-2 lg:max-w-[600px] lg:h-[72px] max-w-[200px]  h-fit text-lg lg:text-xl text-gray-400">
+                        Dive into meaningful conversations
+                        and connect with a community of knowledge enthusiasts. Join our forum for engaging discussions
+                        and shared insights!</p>
+                    <button
+                        class="btn border-0 bg-[#797DFC]  h-14 lg:h-[56px] w-72 lg:w-[235px] max-w-[200px] lg:max-w-[235px] rounded-3xl text-white text-lg lg:text-xl font-bold mt-10">Registered
+                        Now</button>
+                </div>
+                <div class="lg:max-w-full max-w-[200px] lg:mt-0 mt-40">
+                    <img src="images/joinforum.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+
+
+    </footer>
+
+    <script src="js/main.js"></script>
+  
+
+
+</body>
+
+</html>
