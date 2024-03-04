@@ -66,7 +66,7 @@ function handleAddTitle(title, viewCount) {
 function addTitle(title, viewCount) {
 
     const titleContainer = document.getElementById('title-container');
-    console.log(titleContainer);
+    // console.log(titleContainer);
    
     const titleCard = document.createElement('div');
     titleCard.classList = `flex p-4 justify-between bg-white mb-4 rounded-xl`;
