@@ -9,6 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .loading-spinner img{
+            width: 100%;
+        }
+
+        .loading-spinner{
+            display: none;
+        }
+    </style>
+
 
 </head>
 
@@ -114,9 +124,20 @@
                     class="lg:mt-8 mt-4 lg:max-w-2xl sm:max-w-3xl text-center text-slate-900 text-opacity-60 text-lg font-normal   lg:text-xl  leading-normal lg:mb-8 mb-6">
                     Join the conversation, where diverse perspectives converge and dialogues unfold, fostering a dynamic
                     exchange of ideas within our thriving forum community.</p>
+
+                    <div id="loading-spinner" class="loading-spinner ">
+                                            <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" alt="">
+                                            <!-- <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" alt="">
+                                            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" alt=""> -->
+
+
+                    </div>
             </div>
 
+            
+
             <div class="flex lg:flex-row flex-col mt-5 justify-between">
+
                 <div id="discussion-container"
                     >
 

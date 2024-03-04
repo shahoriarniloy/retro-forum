@@ -2,9 +2,13 @@ const searchDiscussion = async (searchText) => {
     const res3 = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`);
     const data3 = await res3.json();
     const sdiscussions = data3.posts;
+    const allData = data3.data3;
 
     if (sdiscussions.length === 0) {
+        document.getElementById('loading-spinner').style.display = "none";
+
         alert('No Matching Categories Found')
+
     } else {
         displaySearchedDiscussions(sdiscussions);
 
@@ -67,6 +71,8 @@ const displaySearchedDiscussions = sdiscussions => {
                     </div>
                     </div>
         `;
+        document.getElementById('loading-spinner').style.display = "none";
+
         discussionContainer.appendChild(discussionCard);
 
     })
@@ -111,9 +117,12 @@ const handleSearch = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
 
+
     if(searchText){
 
         searchDiscussion(searchText);
+        document.getElementById('loading-spinner').style.display = "block";
+
 
     }
 
