@@ -13,7 +13,7 @@ const displayDiscussions = discussions => {
     const discussionContainer = document.getElementById('discussion-container');
     discussions.forEach(discussion => {
         const discussionCard = document.createElement('div');
-        discussionCard.classList = `lg:w-[772px] w-full min-w-fit h-fit bg-indigo-400 bg-opacity-10 rounded-3xl border border-indigo-400 lg:py-8 lg:px-2 flex gap-6 mt-4 p-8`;
+        discussionCard.classList = `lg:max-w-[772px]  lg:min-w-fit w-full min-w-fit h-fit bg-indigo-400 bg-opacity-10 rounded-3xl border border-indigo-400 lg:py-8 lg:px-4 flex gap-6 mt-4 p-8 `;
         const indicatorBackgroundColor = discussion.isActive ? 'bg-green-500 border-green-500' : 'bg-red-500 border-red-500';
         discussionCard.innerHTML = `
             <div class="indicator ml-4 mt-4 ">

@@ -16,7 +16,7 @@ const displayPosts = (posts) => {
 
     posts.forEach(post => {
         const postCard = document.createElement('div');
-        postCard.classList = `card card-compact w-full bg-gray-100 shadow-xl`;
+        postCard.classList = `card card-compact w-full min-w-[350px] bg-gray-100 shadow-xl`;
         postCard.innerHTML = `
         <figure class="px-5 pt-5"><img class="rounded-lg"
         src="${post.cover_image}" alt="Shoes" />

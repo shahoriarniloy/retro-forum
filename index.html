@@ -10,11 +10,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .loading-spinner img{
+        .loading-spinner img {
             width: 100%;
         }
 
-        .loading-spinner{
+        .loading-spinner {
             display: none;
         }
     </style>
@@ -74,7 +74,7 @@
         <!-- banner section -->
 
 
-        <section class="lg:mx-40 mx-12 my-10 mt-40 h-fit">
+        <section class="lg:mx-40 mx-4 my-10 mt-20 h-fit">
 
             <div
                 class="container bg-slate-900 flex flex-col items-center justify-center  min-h-[550px] h-fit rounded-[32px] relative lg:max-w-[1170px] min-w-[350px] mx-auto">
@@ -84,11 +84,13 @@
                     <div class="text-white lg:w-[633px] w-full lg:h-[353px] h-fit">
                         <h1 class="text-4xl lg:text-5xl font-bold ">Welcome to the <span
                                 class="text-indigo-400">Creativize</span> Forum</h1>
-                        <p class="mt-2 w-[455px] h-[72px] text-lg lg:text-xl mb-8">Step into the heart of textile artistry, where creativity and camaraderie intertwine to ignite boundless inspiration.</p>
-                            <input id="search-field" type="text" placeholder="Search here anything"
+                        <p class="mt-2 w-[455px] h-[72px] text-lg lg:text-xl mb-8">Step into the heart of artistry,
+                            where creativity and camaraderie intertwine to ignite boundless inspiration.</p>
+                        <input id="search-field" type="text" placeholder="Search here anything"
                             class="input input-bordered max-w-xs h-[56px] w-[400px] rounded-3xl text-gray-900 bg-gray-100 pl-6 text-base" />
-                        <button class="btn bg-indigo-400 h-[44px] w-[123px] rounded-3xl ml-[-131px] text-base mb-8" onclick="handleSearch()">Search</button>
-                        
+                        <button class="btn bg-indigo-400 h-[44px] w-[123px] rounded-3xl ml-[-131px] text-base mb-8"
+                            onclick="handleSearch()">Search</button>
+
                     </div>
                     <div class="bg-white h-fit lg:w-[371px] w-full rounded-2xl p-10 lg:mb-0 mb-8">
                         <div class="flex text-xl lg:text-2xl justify-between mb-4">
@@ -115,30 +117,30 @@
 
 
 
-        <section class="lg:mx-40 mx-12 my-10">
-            <div class="grid justify-items-center text-center w-fit">
+        <section class="lg:mx-40 mx-4 my-10">
+            <div class="grid justify-items-center text-center ">
                 <h3 class="lg:mt-8 mt-6  text-neutral-900 text-3xl lg:text-4xl font-extrabold">Let's Discuss
                 </h3>
                 <p
                     class="lg:mt-8 mt-4 lg:max-w-2xl  text-slate-900 text-opacity-60 text-lg font-normal   lg:text-xl  leading-normal lg:mb-8 mb-6">
-                    Join our vibrant community of textile artisans and enthusiasts, where creativity thrives and friendships flourish!</p>
+                    Join our vibrant community of textile artisans and enthusiasts, where creativity thrives and
+                    friendships flourish!</p>
 
-                    <div id="loading-spinner" class="loading-spinner ">
-                                            <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" alt="">
-                                         
+                <div id="loading-spinner" class="loading-spinner ">
+                    <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" alt="">
 
 
-                    </div>
+
+                </div>
             </div>
 
-            
+
 
             <div class="flex lg:flex-row flex-col mt-5 justify-between">
 
-                <div id="discussion-container"
-                    >
+                <div id="discussion-container">
 
-                  
+
                 </div>
 
                 <div class="lg:max-w-[374px]  w-full h-auto min-w-fit bg-gray-100 rounded-2xl p-4 mt-4">
@@ -146,12 +148,12 @@
                         <h3 class="text-lg lg:text-xl font-extrabold">Title</h3>
                         <div class="flex">
                             <img class="w-[30px] h-[20px] pr-2" src="images/tick.svg" alt="">
-                            <h3 class="pr-2 text-base lg:text-lg text-[#12132D99] font-semibold">Mark as read</h3>
+                            <h3 class="pr-2 text-base lg:text-lg text-slate-900 font-semibold">Mark as read</h3>
                             <h3 id="count" class="text-base lg:text-lg">(0)</h3>
                         </div>
                     </div>
                     <div id="title-container" class="bg-white rounded-2xl w-[326px] h-[82px] mt-4">
-                        
+
                     </div>
                 </div>
             </div>
@@ -162,12 +164,13 @@
 
 
         <!-- join forum section -->
-        <section class="lg:mx-40 mx-12 mt-20 h-[415px] lg:max-w-[1194px]  min-w-fit lg:min-w-[350px] rounded-3xl ">
+        <section class="lg:mx-40 mx-4 mt-20 h-[415px] lg:max-w-[1194px]  min-w-fit lg:min-w-[350px] rounded-3xl ">
             <div class="  bg-black rounded-[32px] p-20 flex  lg:flex-row flex-col">
                 <div class="text-white lg:w-[670px] h-[250px]">
                     <h1 class="text-4xl lg:text-5xl font-bold">Join Our Forum </h1>
                     <p class="mt-2 lg:max-w-[600px] lg:h-[72px] max-w-[200px]  h-fit text-lg lg:text-xl text-gray-400">
-                        Discover a tapestry of inspiration, where every thread tells a story, and join a community where your creativity finds its true colors.</p>
+                        Discover a tapestry of inspiration, where every thread tells a story, and join a community where
+                        your creativity finds its true colors.</p>
                     <button
                         class="btn border-0 bg-[#797DFC]  h-14 lg:h-[56px] w-72 lg:w-[235px] max-w-[200px] lg:max-w-[235px] rounded-3xl text-white text-lg lg:text-xl font-bold mt-10">Registered
                         Now</button>
@@ -182,16 +185,17 @@
 
         <!-- Latest post section -->
 
-        <section class="lg:mx-40 mx-12 mt-60">
+        <section class="lg:mx-40 mx-4 mt-60 mb-24">
             <div class="grid justify-items-center text-center">
                 <h3 class="lg:mt-6  text-neutral-900 text-4xl lg:text-5xl font-extrabold mt-32">Latest Post</h3>
                 <p
                     class="lg:mt-8 mt-4 lg:max-w-2xl sm:max-w-3xl text-center text-slate-900 text-opacity-60 text-lg font-normal lg:mb-8 mb-6">
-                    Uncover fresh inspiration with every scroll as you explore our latest posts brimming with creativity and innovation.
+                    Uncover fresh inspiration with every scroll as you explore our latest posts brimming with creativity
+                    and innovation.
                 </p>
             </div>
-            <div id="posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
+            <div id="posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full ">
+
             </div>
         </section>
 
@@ -205,7 +209,40 @@
 
 
     </main>
-    <footer>
+
+
+    <footer class=" bg-gradient-to-b from-gray-100 to-gray-400 py-12 min-w-[375px]">
+        <div class="flex flex-col justify-center items-center mt-24">
+            <div class="flex flex-col justify-center items-center px-12">
+                <h1 class="text-center text-slate-900 text-4xl font-black ">Creativize</h1>
+    
+    
+             
+                    <p class="mt-12 text-center"> Explore a rich tapestry of inspiration where each thread narrates a
+                        unique story, and become part of a community where your creativity discovers its authentic hues.</p>
+              
+            </div>
+    
+            <div class="flex mt-12">
+                <img  class="ml-1 w-8 h-auto" src="Images/Facebook.png" alt="Facebook">
+                <img class="ml-1 w-8 h-auto" src="Images/Instagram.png" alt="Instagram">
+                <img  class="ml-1 w-8 h-auto"src="Images/Linkedin.png" alt="LinkedIn">
+                <img  class="ml-1 w-8 h-auto" src="Images/Twitter.png" alt="Twitter">
+    
+            </div>
+        </div>
+        <br>
+
+        <div class="">
+            <hr class="border-dashed border-slate-700">
+        </div>
+
+
+        <div class=" text-center text-slate-900 text-opacity-70 text-base font-normal mt-12 " >
+            <p>2024, All Rights Reserved.</p>
+        </div>
+
+
 
 
     </footer>
@@ -215,7 +252,7 @@
     <script src="js/search.js"></script>
 
 
-  
+
 
 
 </body>
