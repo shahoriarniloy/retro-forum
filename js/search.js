@@ -25,7 +25,7 @@ const displaySearchedDiscussions = sdiscussions => {
     discussionContainer.innerHTML = '';
     sdiscussions.forEach(discussion => {
         const discussionCard = document.createElement('div');
-        discussionCard.classList = `lg:w-[772px] w-full min-w-fit h-fit bg-indigo-400 bg-opacity-10 rounded-3xl border border-indigo-400 lg:py-8 lg:px-2 p-4 flex gap-6 mt-4`;
+        discussionCard.classList = `lg:w-[772px] w-full min-w-fit h-fit bg-indigo-400 bg-opacity-10 rounded-3xl border border-indigo-400 lg:py-8 lg:px-2 p-4 flex gap-6 mt-4 p-8`;
         const indicatorBackgroundColor = discussion.isActive ? 'bg-green-500 border-green-500' : 'bg-red-500 border-red-500';
         discussionCard.innerHTML = `
 
