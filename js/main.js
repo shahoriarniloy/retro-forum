@@ -47,9 +47,10 @@ const displayDiscussions = discussions => {
                             <h3 class="text-base lg:text-lg text-slate-900">${discussion.posted_time}</h3>
                         </div>
                     </div>
-                    <button onclick="handleAddTitle('${discussion.title}', '${discussion.view_count}')">
-                        <img class="h-7 w-auto lg:h-[26px] lg:w-[26px]" src="images/email.svg" alt="">
-                    </button>
+                    <button onclick="handleAddTitle('${discussion.title.replace("'", "\\'")}', '${discussion.view_count}')">
+    <img class="h-7 w-auto lg:h-[26px] lg:w-[26px]" src="images/email.svg" alt="">
+</button>
+
                 </div>
             </div>
         `;
