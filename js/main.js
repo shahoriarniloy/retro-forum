@@ -18,11 +18,11 @@ const displayDiscussions = discussions => {
         discussionCard.innerHTML = `
             <div class="indicator ml-4 mt-4 ">
                 <span class="indicator-item badge badge-secondary ${indicatorBackgroundColor}"></span> 
-                <div class="grid w-32 h-32 bg-base-300 place-items-center ">
+                <div class="grid w-12 h-12 bg-base-300 place-items-center ">
                     <img src="${discussion.image}" />
                 </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col w-full">
                 <div class="flex gap-5">
                     <h3 class="text-sm lg:text-base text-black font-semibold">#${discussion.category}</h3>
                     <h3 class="text-sm lg:text-base text-black font-semibold">Author : ${discussion.author.name} </h3>
